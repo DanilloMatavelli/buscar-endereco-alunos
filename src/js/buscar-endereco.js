@@ -65,6 +65,7 @@ form.addEventListener('submit', async (event) => {
 
         // Realizar consulta à API ViaCep e aguardar a resposta
         const data = await consultaViaCep(url);
+        console.log(data);
 
         // Fechar indicador de carregamento após receber resposta
         Swal.close();
@@ -167,6 +168,7 @@ const consultaViaCep = async (url) => {
     try {
         // Realizar a requisição HTTP GET para a API ViaCep
         const response = await fetch(url);
+        console.log(response);
 
         // Verifica se a resposta da API foi bem-sucedida (200-299)
         if (!response.ok) {
