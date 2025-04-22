@@ -1,0 +1,150 @@
+@import 'buscar-endereco-variables.css';
+
+.page {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-sm);
+}
+
+.header__title {
+    color: var(--color-primary);
+    margin: 0 0 1.6rem;
+}
+
+.header__datetime {
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+    font-weight: bold;
+    padding: 0.8rem 1.6rem;
+    background-color: var(--color-gray-light);
+    border-radius: var(--border-radius-sm);
+    display: inline-block;
+}
+
+.content {
+    flex: 1;
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search__form {
+    background-color: var(--color-white);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-xl);
+    box-shadow: var(--shadow-md);
+    width: 100%;
+    max-width: var(--container-sm);
+    margin-bottom: var(--spacing-xl);
+}
+
+.form__field {
+    margin-bottom: 2.4rem;
+}
+
+.form__label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+    font-size: var(--font-size-sm);
+}
+
+.form__input,
+.form__select {
+    width: 100%;
+    padding: 1.2rem;
+    border: 0.1rem solid var(--color-border);
+    border-radius: var(--border-radius-sm);
+    box-sizing: border-box;
+    transition: border-color var(--transition-default);
+}
+
+.form__input:focus,
+.form__select:focus {
+    border-color: var(--color-secondary);
+    outline: none;
+}
+
+.form__actions {
+    display: flex;
+    gap: 1rem;
+}
+
+.form__button {
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: var(--border-radius-sm);
+    cursor: pointer;
+    transition: background-color var(--transition-default);
+}
+
+.form__button--submit {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.form__button--submit:hover {
+    background-color: var(--color-primary-dark);
+}
+
+.form__button--reset {
+    background-color: var(--color-gray);
+    color: var(--color-white);
+}
+
+.form__button--reset:hover {
+    background-color: var(--color-gray-dark);
+}
+
+.results {
+    width: 100%;
+    max-width: var(--container-lg);
+}
+
+.results__container {
+    width: 100%;
+    min-height: 10rem;
+}
+
+.results__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: var(--spacing-md);
+}
+
+.results__table th,
+.results__table td {
+    padding: var(--spacing-md);
+    text-align: left;
+    border-bottom: 0.1rem solid var(--color-border);
+}
+
+.results__table th {
+    background-color: var(--color-gray-light);
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: var(--spacing-md);
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-lg);
+}
+
+.footer__text {
+    color: var(--color-gray);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}

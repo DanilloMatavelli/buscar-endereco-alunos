@@ -1,0 +1,21 @@
+/* Responsividade */
+@media (max-width: 992px) {
+    .search__form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 1rem;
+    }
+
+    .search__form {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    .results__table {
+        width: 100%;
+    }
+}

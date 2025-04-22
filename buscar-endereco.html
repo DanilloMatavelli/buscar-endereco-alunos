@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta ViaCep</title>
+
+    <!-- Importação dos arquivos CSS interno -->
+    <link rel="stylesheet" href="./src/styles/buscar-endereco-global.css">
+    <link rel="stylesheet" href="./src/styles/buscar-endereco-media.css">
+    <link rel="stylesheet" href="./src/styles/buscar-endereco-table.css">
+    
+    <!-- Importação dos alertas SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+
+    <!-- Importação dos arquivos JavaScript internos -->
+    <script src="./src/js/datetime.js" defer></script>
+    <script src="./src/js/buscar-endereco.js" defer></script>
+</head>
+
+<body>
+    <main class="page">
+        <header class="header">
+            <h1 class="header__title">Consulta ViaCep</h1>
+            <div class="header__datetime"></div>
+        </header>
+
+        <div class="content">
+
+            <section class="search">
+                <form id="consultaForm" class="search__form">
+                    <div class="form__field">
+                        <label for="uf" class="form__label">Estado:</label>
+                        <select id="uf" class="form__select">
+                            <option value="">Selecione um estado</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="DF">Distrito Federal</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                        </select>
+                    </div>
+
+                    <div class="form__field">
+                        <label for="cidade" class="form__label">Cidade:</label>
+                        <input type="text" id="cidade" class="form__input">
+                    </div>
+
+                    <div class="form__field">
+                        <label for="logradouro" class="form__label">Logradouro:</label>
+                        <input type="text" id="logradouro" class="form__input">
+                    </div>
+
+                    <div class="form__actions">
+                        <button type="submit" class="form__button form__button--submit">Consultar</button>
+                        <button type="button" id="novaConsulta" class="form__button form__button--reset">Nova
+                            Consulta</button>
+                    </div>
+                </form>
+            </section>
+
+            <section class="results">
+                <div id="result" class="results__container">
+                    
+                </div>
+            </section>
+        </div>
+
+        <footer class="footer">
+            <p class="footer__text">© 2025 Consulta ViaCep</p>
+        </footer>
+    </main>
+</body>
+
+</html>
